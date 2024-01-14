@@ -31,20 +31,7 @@ function Navbar() {
           <Link to="/Projects" className="item">Projects</Link>
           <Link to="/Skills" className="item">Skills</Link>
           {/* <Link to="/Contact" className="item">Contact</Link> */}
-        {/* {open && <div className="sidenav flex">
-              <Link to="/Projects" className="item">Projects</Link>
-              <Link to="/Skills" className="item">Skills</Link>
-              <Link to="/Projects" className="item">Projects</Link>
-              <Link to="/Contact" className="item">Contact</Link>
-        </div>}
-        {!open && 
-            <div className="flex">
-                  <div className="item">Projects</div>
-                  <div className="item">Skills</div>
-                  <div className="item">Projects</div>
-                  <div className="item">Contact</div>
-            </div>
-        } */}
+            
 
 
 

@@ -10,7 +10,9 @@ export default function Projects() {
                 "React Amazon clone, dynamic listings.",
                 "Responsive design, RESTful API.",
                 "Project Link: https://amazon-clone333.netlify.app/",
-            ]
+            ],
+                            "projectLink": "https://amazon-clone333.netlify.app/",
+            image: "src/assets/amazon.png"
         },
         {
             title: "Wordle Clone",
@@ -19,7 +21,9 @@ export default function Projects() {
                 "Clone of popular NewYork Times game “Wordle”",
                 "Responsive design",
                 "Project Link: https://wordle-clone333.netlify.app/",
-            ]
+            ],
+                            "projectLink": "https://wordle-clone333.netlify.app/",
+            image: "src/assets/wordle.png"
         },
         {
             title: "Tic-Tac-Toe",
@@ -27,14 +31,16 @@ export default function Projects() {
             description: [
                 "Web based Tic - Tac - Toe",
                 "Project Link: https://tictactoe333.netlify.app/",
-            ]
+            ],
+                            "projectLink": "https://tictactoe333.netlify.app/",
+            image: "src/assets/tic_tac_toe.png"
         }
     ];
     return (
         <div className='projects-container'>
             {
                 content.map((obj, i) => {
-                    const { title, sub, description } = obj;
+                    const { title, sub, description, image, projectLink } = obj;
                     return (
                         <div className="project-container flex" key={i} style={{ '--container-index': i }}>
                             <div className="left flex-col">
@@ -47,8 +53,9 @@ export default function Projects() {
                                 })}</ul>
                             </div>
                             <div className="right flex">
-                                <div className="work-img-container">
-                                </div>
+                                <a className="work-img-container" href={projectLink} target='__blank'>
+                                    <img src={image} alt={title} />
+                                </a>
                             </div>
                         </div>
                     )
