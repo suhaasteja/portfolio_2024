@@ -1,5 +1,8 @@
 import React from 'react'
 import "./Projects.css"
+import amazon_img from "../assets/amazon.png";
+import wordle_img from "../assets/wordle.png";
+import tic_img from "../assets/tic_tac_toe.png";
 
 export default function Projects() {
     const content = [
@@ -11,8 +14,8 @@ export default function Projects() {
                 "Responsive design, RESTful API.",
                 "Project Link: https://amazon-clone333.netlify.app/",
             ],
-                            "projectLink": "https://amazon-clone333.netlify.app/",
-            image: "src/assets/amazon.png"
+            "projectLink": "https://amazon-clone333.netlify.app/",
+            image: amazon_img
         },
         {
             title: "Wordle Clone",
@@ -22,8 +25,8 @@ export default function Projects() {
                 "Responsive design",
                 "Project Link: https://wordle-clone333.netlify.app/",
             ],
-                            "projectLink": "https://wordle-clone333.netlify.app/",
-            image: "src/assets/wordle.png"
+            "projectLink": "https://wordle-clone333.netlify.app/",
+            image: wordle_img
         },
         {
             title: "Tic-Tac-Toe",
@@ -32,8 +35,8 @@ export default function Projects() {
                 "Web based Tic - Tac - Toe",
                 "Project Link: https://tictactoe333.netlify.app/",
             ],
-                            "projectLink": "https://tictactoe333.netlify.app/",
-            image: "src/assets/tic_tac_toe.png"
+            "projectLink": "https://tictactoe333.netlify.app/",
+            image: tic_img
         }
     ];
     return (
