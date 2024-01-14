@@ -82,25 +82,20 @@
     }
 }
 
-/* Keyframes for slide-in */
 @keyframes opacityChange {
     0% {
-        /* transform: translateX(100%); */
                 opacity: 0;
     }
 
         50% {
-            /* transform: translateX(100%); */
             opacity: 0.5;
         }
 
     100% {
-        /* transform: translateX(0); */
                 opacity: 1;
     }
 }
 
-/* Applying animations to elements */
 #circle-1,
 #circle-2 {
     animation: fadeInScaleUp 1s ease-out forwards;
@@ -110,7 +105,6 @@
     animation: opacityChange 1s ease-out forwards;
 }
 
-/* For text animations, consider JavaScript or GSAP */
 
 .circle:hover {
     transform: scale(1.1);
@@ -119,15 +113,12 @@
 
 #circle-1:hover {
     background: #A78BE2;
-    /* New color for circle-1 on hover */
 }
 
 #circle-2:hover {
     background: #9CD9A2;
-    /* New color for circle-2 on hover */
 }
 
-/* Existing styles... */
 
 .circle {
     transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
@@ -161,7 +152,6 @@
     background: #9CD9A2;
 }
 
-/* Rest of your existing styles... */
 .contact-links {
     display: flex;
     justify-content: start;

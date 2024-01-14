@@ -1,35 +1,35 @@
-.footer-container{
-        justify-content: space-evenly;
-            /* position: absolute; */
-            bottom: 0;
+.footer-container {
+    justify-content: space-evenly;
+    /* position: absolute; */
+    bottom: 0;
 
 }
 
-.title{
+.title {
     color: #000;
-        font-family: Inter;
-        font-size: 23px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
+    font-family: Inter;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 
-.link{
+.link {
     color: #000;
-        font-family: Inter;
-        font-size: 15px;
-        font-style: normal;
-        font-weight: 200;
-        line-height: normal;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
 }
 
 
-.footer-vals{
+.footer-vals {
     align-items: flex-start;
 }
 
 
-.trademark{
+.trademark {
     align-items: flex-end;
 }

@@ -1,10 +1,8 @@
-/* Main container for the work section */
 .work-container {
     margin: 20px auto;
     padding: 20px;
 }
 
-/* Individual work sections */
 .work-section {
     opacity: 0;
     animation: fadeIn 0.8s ease-out forwards;
@@ -15,7 +13,6 @@
     align-items: start;
 }
 
-/* Heading of each work section */
 .work-section .heading {
     font-family: "Inter", sans-serif;
     font-size: 22px;
@@ -25,7 +22,6 @@
     width: 40%;
 }
 
-/* Container for the work information */
 .all-info-container {
     width: 70%;
     display: flex;
@@ -33,14 +29,11 @@
     gap: 15px;
 }
 
-/* Individual info container */
 .info-container {
     display: flex;
-    /* flex-direction: column; */
     gap: 10px;
 }
 
-/* Date or duration of each work experience */
 .duration {
     font-family: "Inter", sans-serif;
     font-size: 16px;
@@ -50,7 +43,6 @@
     margin: 0.3rem;
 }
 
-/* Information block */
 .information {
     display: flex;
     flex-direction: column;
@@ -60,7 +52,6 @@
     justify-content: start;
 }
 
-/* Title with link */
 .title {
     font-family: "Inter", sans-serif;
     font-size: 18px;
@@ -74,13 +65,11 @@
     color: #003366;
 }
 
-/* Subtitle */
 .sub {
     font-size: 16px;
     color: #666;
 }
 
-/* Description list */
 .description {
     list-style-type: none;
     padding: 0;
@@ -88,12 +77,10 @@
     color: #444;
 }
 
-/* List items */
 .description li {
     margin-bottom: 5px;
 }
 
-/* Fade-in animation for work sections */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -111,15 +98,15 @@
 }
 
 @media (max-width: 768px) {
-    .work-section{
+    .work-section {
         flex-direction: column;
     }
 
-        .work-section .heading{
-            justify-content: start;
-        }
+    .work-section .heading {
+        justify-content: start;
+    }
 
-                .all-info-container{
-                    width: 100%;
-                }
+    .all-info-container {
+        width: 100%;
+    }
 }

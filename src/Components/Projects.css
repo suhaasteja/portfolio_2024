@@ -1,4 +1,3 @@
-/* Main container for the work section */
 .projects-container {
     display: flex;
     flex-wrap: wrap;
@@ -6,7 +5,6 @@
     padding: 20px;
 }
 
-/* Individual project containers */
 .project-container {
     display: flex;
     flex-direction: column;
@@ -19,13 +17,11 @@
     max-width: 300px;
 }
 
-/* Left section of the project container */
 .left {
     width: 100%;
     text-align: center;
 }
 
-/* Title styling */
 .title {
     font-size: 20px;
     font-weight: 600;
@@ -33,14 +29,12 @@
     color: #333;
 }
 
-/* Subtitle styling */
 .sub {
     font-size: 16px;
     color: #666;
     margin-bottom: 15px;
 }
 
-/* Description list styling */
 .description {
     list-style-type: none;
     padding: 0;
@@ -48,26 +42,20 @@
     color: #444;
 }
 
-/* List items within description */
 .description .item {
     margin-bottom: 5px;
     line-height: 1.4;
 }
 
-/* Right section for images */
 .right {
     width: 100%;
     height: 200px;
-    /* Adjust height as needed */
-    /* background-color: #f4f4f4; */
-    /* Placeholder for image */
     margin-top: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .project-container {
         margin: 10px;
@@ -76,7 +64,6 @@
 
     .right {
         height: 150px;
-        /* Adjust for smaller screens */
     }
 }
 
@@ -91,24 +78,20 @@
 }
 
 .project-container {
-    /* Existing styles... */
     opacity: 0;
     animation: fadeIn 0.8s ease-out forwards;
     animation-delay: calc(0.2s * var(--container-index));
 }
 
 .title {
-    /* Existing styles... */
     transition: color 0.3s ease-in-out;
 }
 
 .title:hover {
     color: #0056b3;
-    /* Or any other color that fits the theme */
 }
 
 .description .item {
-    /* Existing styles... */
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
@@ -117,12 +100,13 @@
     opacity: 0.8;
 }
 
-.work-img-container{
+.work-img-container {
+    height: 100%;
+    width: 100%;
 
 }
 
 .work-img-container {
-    /* Existing styles... */
     transition: transform 0.3s ease-in-out;
 }
 
@@ -132,13 +116,11 @@
 
 @media (max-width: 768px) {
     .project-container {
-        /* Existing styles... */
         animation-delay: 0s;
-        /* Remove delay on smaller screens for better performance */
     }
 }
 
-.work-img-container img{
+.work-img-container img {
     width: 100%;
     height: 100%;
     object-fit: contain;
