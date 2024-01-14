@@ -1,0 +1,109 @@
+.about-container {
+    height: 100%;
+}
+
+.circles-container {
+    width: 50%;
+}
+
+
+.about-info {
+    width: 50%;
+    z-index: 10;
+}
+
+
+#circle-1 {
+    width: 20rem;
+    height: 20rem;
+    background: #C8B0F0;
+    border-radius: 300px;
+}
+
+#circle-2 {
+    width: 10rem;
+    height: 10rem;
+    background: #C2E1AF;
+    border-radius: 300px;
+    position: absolute;
+    left: 60%;
+}
+
+
+#name {
+    color: #000;
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.sub {
+    color: #000;
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.description {
+    color: #000;
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+
+.circles {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+/* Keyframes for fade-in and scale-up */
+@keyframes fadeInScaleUp {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Keyframes for slide-in */
+@keyframes opacityChange {
+    0% {
+        /* transform: translateX(100%); */
+                opacity: 0;
+    }
+
+        50% {
+            /* transform: translateX(100%); */
+            opacity: 0.5;
+        }
+
+    100% {
+        /* transform: translateX(0); */
+                opacity: 1;
+    }
+}
+
+/* Applying animations to elements */
+#circle-1,
+#circle-2 {
+    animation: fadeInScaleUp 1s ease-out forwards;
+}
+
+.about-info {
+    animation: opacityChange 1s ease-out forwards;
+}
+
+/* For text animations, consider JavaScript or GSAP */

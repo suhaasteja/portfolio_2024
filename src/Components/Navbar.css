@@ -1,0 +1,47 @@
+.nav-container {
+    /* width: 20%; */
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.home{
+        width: 50%;
+            justify-content: flex-start;
+            gap: 1rem;
+}
+
+.dot{
+        width: 1rem;
+            height: 1rem;
+            background: #c8b0f0;
+            border-radius: 300px;
+}
+
+.name {
+    font-size: 25px;
+    font-family: 'Inter';
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+
+
+.name:hover {
+    text-decoration: underline;
+}
+
+.sidenav {
+    /* width: 80%;
+
+    justify-content: right; */
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.item {
+    font-family: 'Inter';
+    text-decoration: none;
+    color: #000;
+}

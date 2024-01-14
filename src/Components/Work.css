@@ -1,0 +1,56 @@
+.work-container {
+    /* max-width: 1200px; */
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.work-section {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 0.5px solid grey;
+    margin: 30px 0;
+}
+
+.work-section .heading {
+    width: 35%;
+    font-family: "Inter";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.info-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.duration {
+    width: 50%;
+    font-family: "Inter";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.information {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+}
+
+
+.all-info-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
