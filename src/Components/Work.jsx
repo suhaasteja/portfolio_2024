@@ -9,6 +9,7 @@ export default function Work() {
                 {
                     date: "Aug, 2023 - Present",
                     title: "San Jose State University",
+                    link: "https://www.sjsu.edu/",
                     sub: "Computer Engineering graduate student",
                     description: [
                         "Data Structures & Algorithms in C++",
@@ -24,6 +25,7 @@ export default function Work() {
                 {
                     date: "Mar, 2022 - May, 2023",
                     title: "ZestIOT",
+                    link: "https://www.zestiot.com/",
                     sub: "Software Engineer",
                     description: [
                         "10 + SPAs developed, 85 % digitization.",
@@ -37,6 +39,7 @@ export default function Work() {
                 {
                     date: "Sep, 2021 - Dec, 2021",
                     title: "Intelloger",
+                    link: "https://www.intelloger.com/",
                     sub: "Intern",
                     description: [
                         "HTML / CSS / JS skills, practical work.",
@@ -51,7 +54,7 @@ export default function Work() {
         {
             content.map((item, i) => {
                 const { heading, info } = item;
-                return <div className="work-section" key={i}>
+                return <div className="work-section" key={i} style={{ '--section-index': i }}>
                     <div className="heading flex">{heading}</div>
                     <div className="all-info-container">
                         {
@@ -59,11 +62,12 @@ export default function Work() {
                                 const { date,
                                     title,
                                     sub,
-                                    description } = el;
+                                    description,
+                                link } = el;
                                 return <div className='info-container' key={j}>
                                     <div className="duration">{date}</div>
                                     <div className="information">
-                                        <div className="title">{title}</div>
+                                        <a href={link} target='__blank' className="title">{title}</a>
                                         <div className="sub">{sub}</div>
                                         <ul className="description">{
                                             description.map((point, k) => {

@@ -1,56 +1,111 @@
+/* Main container for the work section */
 .work-container {
-    /* max-width: 1200px; */
     margin: 20px auto;
     padding: 20px;
 }
 
+/* Individual work sections */
 .work-section {
+    opacity: 0;
+    animation: fadeIn 0.8s ease-out forwards;
+    animation-delay: calc(0.2s * var(--section-index));
     display: flex;
-    align-items: start;
     justify-content: space-between;
-    width: 100%;
-    border-bottom: 0.5px solid grey;
-    margin: 30px 0;
+    flex-direction: row;
+    align-items: start;
 }
 
+/* Heading of each work section */
 .work-section .heading {
-    width: 35%;
-    font-family: "Inter";
-    font-size: 25px;
-    font-style: normal;
+    font-family: "Inter", sans-serif;
+    font-size: 22px;
     font-weight: 600;
-    line-height: normal;
+    margin-bottom: 15px;
+    color: #333;
+    width: 40%;
 }
 
-.info-container {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-}
-
-.duration {
-    width: 50%;
-    font-family: "Inter";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.information {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: space-between;
-}
-
-
+/* Container for the work information */
 .all-info-container {
-    width: 80%;
+    width: 70%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
+    gap: 15px;
+}
+
+/* Individual info container */
+.info-container {
+    display: flex;
+    /* flex-direction: column; */
+    gap: 10px;
+}
+
+/* Date or duration of each work experience */
+.duration {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #666;
+    width: 40%;
+    margin: 0.3rem;
+}
+
+/* Information block */
+.information {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 60%;
+    align-items: start;
+    justify-content: start;
+}
+
+/* Title with link */
+.title {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.title:hover {
+    color: #003366;
+}
+
+/* Subtitle */
+.sub {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Description list */
+.description {
+    list-style-type: none;
+    padding: 0;
+    font-size: 14px;
+    color: #444;
+}
+
+/* List items */
+.description li {
+    margin-bottom: 5px;
+}
+
+/* Fade-in animation for work sections */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.work-section {
+    opacity: 0;
+    animation: fadeIn 0.8s ease-out forwards;
+    animation-delay: calc(0.2s * var(--section-index));
 }

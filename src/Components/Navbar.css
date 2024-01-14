@@ -1,47 +1,72 @@
+/* Container for the navigation bar */
 .nav-container {
-    /* width: 20%; */
+    display: flex;
     justify-content: space-between;
-    margin: 20px;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    /* Consider a light color for a clean look */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
-.home{
-        width: 50%;
-            justify-content: flex-start;
-            gap: 1rem;
-}
-
-.dot{
-        width: 1rem;
-            height: 1rem;
-            background: #c8b0f0;
-            border-radius: 300px;
-}
-
-.name {
-    font-size: 25px;
-    font-family: 'Inter';
-    list-style: none;
-    text-decoration: none;
-    color: #000;
-    font-weight: 500;
-}
-
-
-.name:hover {
-    text-decoration: underline;
-}
-
-.sidenav {
-    /* width: 80%;
-
-    justify-content: right; */
-    flex-direction: column;
+/* Home section of the navbar */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: left;
     gap: 10px;
 }
 
+/* Styling for the decorative dot */
+.dot {
+    width: 12px;
+    height: 12px;
+    background: #c8b0f0;
+    border-radius: 50%;
+}
 
-.item {
-    font-family: 'Inter';
+/* Name link styling */
+.name {
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    color: #333;
     text-decoration: none;
-    color: #000;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.name:hover {
+    color: #007bff;
+    /* Or a color that matches your theme */
+}
+
+/* General item link styling */
+.item {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #666;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.item:hover {
+    color: #333;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .home {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .item {
+        padding: 8px 0;
+    }
 }

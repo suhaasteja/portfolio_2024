@@ -31,18 +31,18 @@ export default function Projects() {
         }
     ];
     return (
-        <div className='work-container'>
+        <div className='projects-container'>
             {
                 content.map((obj, i) => {
                     const { title, sub, description } = obj;
                     return (
-                        <div className="project-container flex" key={i}>
+                        <div className="project-container flex" key={i} style={{ '--container-index': i }}>
                             <div className="left flex-col">
                                 <div className="title">{title}</div>
                                 <div className="sub">{sub}</div>
                                 <ul className="description">{description.map((item, i) => {
                                     return (
-                                        <li key={i} className='item'>{item}</li>
+                                        <li key={i} className='item' style={{ '--item-index': i }}>{item}</li>
                                     )
                                 })}</ul>
                             </div>

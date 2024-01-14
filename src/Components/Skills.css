@@ -8,6 +8,7 @@
     justify-items: center;
     /* Centers items horizontally in their cell */
     align-items: center;
+    margin-top: 30px;
 }
 
 
@@ -27,3 +28,60 @@
     text-align: center;
     font-family: "Inter";
 }
+
+
+.skill-box {
+    width: 5rem;
+    height: 5rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.skill-box:hover {
+    transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.skill-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    animation: fadeIn 1s ease-out;
+    cursor: pointer;
+}
+
+
+.img-caption {
+    text-align: center;
+    font-family: "Inter";
+    transform: translateY(10px);
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.skill-box:hover .img-caption {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* @keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.skill-box img:hover {
+    animation: rotate 20s linear infinite;
+} */
