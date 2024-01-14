@@ -33,3 +33,10 @@ body,#root {
   height: 98%;
 }
 
+
+
+@media (max-width: 768px){
+  .app-container{
+    margin: 10px;
+  }
+}

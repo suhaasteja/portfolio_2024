@@ -109,3 +109,17 @@
     animation: fadeIn 0.8s ease-out forwards;
     animation-delay: calc(0.2s * var(--section-index));
 }
+
+@media (max-width: 768px) {
+    .work-section{
+        flex-direction: column;
+    }
+
+        .work-section .heading{
+            justify-content: start;
+        }
+
+                .all-info-container{
+                    width: 100%;
+                }
+}

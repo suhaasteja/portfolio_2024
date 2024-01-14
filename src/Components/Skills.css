@@ -85,3 +85,10 @@
 .skill-box img:hover {
     animation: rotate 20s linear infinite;
 } */
+
+
+@media (max-width: 768px){
+    .skills-container{
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+}
