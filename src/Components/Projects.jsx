@@ -15,7 +15,8 @@ export default function Projects() {
                 "Project Link: https://amazon-clone333.netlify.app/",
             ],
             "projectLink": "https://amazon-clone333.netlify.app/",
-            image: amazon_img
+            image: amazon_img,
+            github: "https://github.com/suhaasteja/amazon_clone"
         },
         {
             title: "Wordle Clone",
@@ -26,7 +27,8 @@ export default function Projects() {
                 "Project Link: https://wordle-clone333.netlify.app/",
             ],
             "projectLink": "https://wordle-clone333.netlify.app/",
-            image: wordle_img
+            image: wordle_img,
+            github: "https://github.com/suhaasteja/wordle_clone"
         },
         {
             title: "Tic-Tac-Toe",
@@ -36,14 +38,15 @@ export default function Projects() {
                 "Project Link: https://tictactoe333.netlify.app/",
             ],
             "projectLink": "https://tictactoe333.netlify.app/",
-            image: tic_img
+            image: tic_img,
+            github: "https://github.com/suhaasteja/tic-tac-toe-react"
         }
     ];
     return (
         <div className='projects-container'>
             {
                 content.map((obj, i) => {
-                    const { title, sub, description, image, projectLink } = obj;
+                    const { title, sub, description, image, projectLink, github } = obj;
                     return (
                         <div className="project-container flex" key={i} style={{ '--container-index': i }}>
                             <div className="left flex-col">
@@ -55,6 +58,7 @@ export default function Projects() {
                                     )
                                 })}</ul>
                             </div>
+                            <a href={github} target='__blank' className="github-link">Github</a>
                             <div className="right flex">
                                 <a className="work-img-container" href={projectLink} target='__blank'>
                                     <img src={image} alt={title} />
